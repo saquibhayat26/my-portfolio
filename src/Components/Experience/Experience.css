@@ -1,0 +1,114 @@
+.experience {
+  height: 83.5vh;
+  margin-top: 5rem;
+  position: relative;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.achievements__wrapper1 {
+  flex: 4;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.achievements__wrapper2 {
+  width: 7rem;
+  height: 7rem;
+  padding: 10px;
+  position: relative;
+  background: linear-gradient(to bottom, #87e6fb 0%, #f6ce8f 100%);
+  border-radius: 100%;
+}
+
+.achievements {
+  color: rgb(0, 0, 0);
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.achievements :first-child {
+  font-size: 32px;
+  color: #fdd28c;
+  font-weight: bold;
+}
+.achievements :nth-child(3) {
+  color: #fdd28c;
+}
+.achievements :last-child {
+  color: #39b2cd;
+}
+.achievements > * {
+  font-size: 18px;
+  color: var(--gray);
+}
+
+.skills__wrapper {
+  flex: 6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.skills__set {
+  display: flex;
+  gap: 2rem;
+}
+
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray);
+  width: 8rem;
+  height: 0.5rem;
+  padding: 1rem;
+  border: 8px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to bottom, #87e6fb 0%, #fdd28c 100%);
+  font-size: 16px;
+  transition: all 0.4s ease;
+}
+
+.skills:hover {
+  cursor: pointer;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.achievements__blur {
+  position: absolute;
+  width: 12rem;
+  height: 10rem;
+  border-radius: 50%;
+  background: #edd0ff;
+  filter: blur(100px);
+  top: 3rem;
+  left: 2rem;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  .skills__wrapper {
+    display: flex;
+    flex-direction: row;
+    scale: 0.65;
+    margin-top: -2rem;
+  }
+  .skills__set {
+    flex-direction: column;
+  }
+}

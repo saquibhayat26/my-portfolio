@@ -1,0 +1,26 @@
+.floatingdiv__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 18px;
+  padding: 0 2rem 0 0;
+  height: 3.5rem;
+  width: 7.5rem;
+}
+
+.floatingdiv__wrapper > img {
+  transform: scale(0.4);
+}
+
+.floatingdiv__wrapper > span {
+  font-size: 14px;
+  color: var(--black);
+}
+
+.floatingdiv__onlyEmoji {
+  position: relative;
+  transform: scale(0.6);
+  left: -5rem;
+  top: -2.5rem;
+}

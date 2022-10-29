@@ -1,0 +1,157 @@
+.work__wrapper {
+  display: flex;
+  height: 90vh;
+  margin-top: 2rem;
+  display: flex;
+  padding: 1rem;
+  position: relative;
+}
+
+.work__left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.work__name {
+  display: flex;
+  flex-direction: column;
+}
+
+.work__name > :nth-child(1) {
+  font-size: 3rem;
+  color: var(--black);
+  font-weight: 600;
+}
+
+.work__name > :nth-child(2) {
+  color: var(--orange);
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.work__name > :nth-child(3) {
+  color: var(--gray);
+  font-size: 14px;
+  font-weight: 100;
+  margin-top: 10px;
+}
+
+.work__btn {
+  width: 6rem;
+  height: 2rem;
+  margin-top: 2rem;
+}
+
+.work__blur {
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: #edd0ff;
+  filter: blur(72px);
+  top: 0;
+  z-index: -1;
+}
+
+.w-blur2 {
+  background-color: #c1f5ff;
+  top: 18rem;
+  left: -14rem;
+}
+.work__right {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.main__circle {
+  position: relative;
+  width: 18rem;
+  height: 18rem;
+  background: rgb(255, 255, 255);
+  border-radius: 100%;
+  left: 8rem;
+  top: 5rem;
+}
+
+.main__circle > * {
+  position: absolute;
+}
+
+.main__circle :nth-child(1) {
+  top: 6rem;
+  left: -3rem;
+}
+.main__circle :nth-child(2) {
+  top: -3rem;
+  left: 6rem;
+}
+.main__circle :nth-child(3) {
+  top: 6rem;
+  left: 6rem;
+}
+.main__circle :nth-child(4) {
+  top: 6rem;
+  left: 15rem;
+}
+.main__circle :nth-child(5) {
+  top: 15rem;
+  left: 6rem;
+}
+
+.inner__circle > img {
+  transform: scale(0.59);
+}
+
+.inner__circle {
+  width: 6rem;
+  height: 6rem;
+  background: rgb(255, 255, 255);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back__circle {
+  width: 13rem;
+  height: 13rem;
+  border-radius: 100%;
+  z-index: -1;
+  position: absolute;
+}
+
+.blue__circle {
+  background-color: blue;
+  top: 2rem;
+  left: 16rem;
+}
+.yellow__circle {
+  background-color: rgb(235, 242, 16);
+  top: 13rem;
+  left: 16rem;
+}
+
+.w-blur1 {
+  background-color: rgb(238, 191, 246);
+  top: 6rem;
+  left: 0rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .work__wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 150vh;
+  }
+
+  .work__right {
+    transform: scale(0.9);
+    margin-left: -6rem;
+  }
+}

@@ -1,0 +1,19 @@
+.pDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pDetails > p {
+  font-size: 2rem;
+}
+
+.pDetailsImg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pDetailsImg > img {
+  width: 70%;
+  margin-bottom: 1em;
+}

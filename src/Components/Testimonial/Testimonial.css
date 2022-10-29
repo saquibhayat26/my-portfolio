@@ -1,0 +1,97 @@
+.testimonial {
+  gap: 0.5rem;
+  height: 98vh;
+  position: relative;
+}
+
+.testimonial__top {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial__top > p {
+  text-align: center;
+  color: var(--orange);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.testimonial__top :nth-child(2) {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-top: -1rem;
+}
+
+.testimonial__blur {
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: #edd0ff;
+  filter: blur(72px);
+  top: 0;
+  z-index: -1;
+}
+.t-blur1 {
+  background-color: rgb(238, 191, 246);
+  top: 6rem;
+  left: 4rem;
+}
+.t-blur2 {
+  background-color: #c1f5ff;
+  top: 10rem;
+  right: 4rem;
+}
+
+.testimonial .swiper {
+  width: 50%;
+  height: 60%;
+  margin-top: 1rem;
+}
+
+.testimonial .swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 7px solid var(--blueCard);
+  box-shadow: var(--boxShadow);
+  height: 90%;
+  margin-bottom: 2rem;
+}
+
+.review > img {
+  display: block;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100%;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+
+.review > span {
+  color: var(--black);
+  margin-bottom: 1rem;
+  width: 70%;
+}
+
+@media only screen and (max-width: 1068px) {
+  .testimonial .swiper {
+    width: 100%;
+  }
+  .review > span {
+    width: 100%;
+  }
+}

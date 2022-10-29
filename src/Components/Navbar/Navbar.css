@@ -1,0 +1,93 @@
+.nav__wrapper {
+  display: flex;
+  height: 10vh;
+  justify-content: space-between;
+  position: relative;
+}
+
+.nav__left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+}
+
+.nav__leftName {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.nav__left > span {
+  border: 4px solid var(--orange);
+  display: flex;
+  cursor: pointer;
+  border-radius: 20px;
+  position: relative;
+  padding: 2px;
+}
+
+.nav__toggleRight {
+  transition: all 0.3s ease;
+  position: absolute;
+  width: 1.2rem;
+  height: 1.2rem !important;
+  background-color: var(--orange);
+  border-radius: 100%;
+  top: 2px;
+  left: 1.7rem;
+}
+
+.nav__toggleLeft {
+  transition: all 0.3s ease;
+  position: absolute;
+  width: 1.2rem;
+  height: 1.2rem !important;
+  background-color: var(--orange);
+  border-radius: 100%;
+  top: 2px;
+  left: 4px;
+}
+
+.nav__left > span > * {
+  height: 1.2rem;
+}
+
+.nav__right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.nav__list > ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin-right: 4rem;
+}
+
+.nav__list > ul > a > li:hover {
+  color: var(--orange);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 380px) {
+  .nav__left {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav__right {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .nav__list {
+    display: none;
+  }
+  .nav__btn {
+    margin-left: 4rem;
+  }
+}

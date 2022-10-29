@@ -1,0 +1,50 @@
+.card {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 13rem;
+  border: 7px solid var(--orange);
+  border-radius: 20px;
+  gap: 1rem;
+  padding: 0 26px 2rem 26px;
+  box-shadow: var(--boxShadow);
+  background-color: rgba(255, 255, 255, 0.36);
+}
+
+.card > :nth-child(1) {
+  transform: scale(0.69);
+  margin-top: 2rem;
+}
+
+.card > :nth-child(2) {
+  color: var(--black);
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: -2rem;
+}
+
+.card > :nth-child(3) {
+  font-size: 16px;
+}
+
+.card__btn {
+  border: none;
+  color: #5290fd;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 19px 60px rgba(0, 0, 0, 0.08);
+}
+
+.card__btnDark {
+  border: none;
+  color: #161c28;
+  cursor: pointer;
+  padding: 10px;
+  background-color: transparent;
+  box-shadow: 0 19px 60px rgba(0, 0, 0, 0.08);
+}

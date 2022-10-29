@@ -1,0 +1,150 @@
+.intro__wrapper {
+  display: flex;
+  height: 87.5vh;
+  position: relative;
+}
+
+.intro__left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.intro__name {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro__name > :nth-child(1) {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.intro__name > :nth-child(2) {
+  color: var(--orange);
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.intro__name > :nth-child(3) {
+  color: var(--gray);
+  font-size: 14px;
+  font-weight: 100;
+  margin-top: 10px;
+}
+
+.intro__btn {
+  width: 6rem;
+  height: 2rem;
+}
+
+.intro__icons {
+  margin-top: 3rem;
+  gap: 0rem;
+  display: flex;
+}
+
+.intro__icons > * {
+  transform: scale(0.5);
+  transition: all 0.2s ease;
+}
+
+.intro__icons > *:hover {
+  cursor: pointer;
+  transform: scale(0.55);
+}
+
+.intro__right {
+  flex: 1;
+  position: relative;
+}
+
+.intro__right > * {
+  position: absolute;
+  z-index: 1;
+}
+
+.intro__right > :nth-child(1) {
+  transform: scale(0.79);
+  left: -5rem;
+}
+
+.intro__right > :nth-child(2) {
+  transform: scale(0.4);
+  top: -13.8rem;
+  left: -18rem;
+  width: 58rem;
+}
+
+.intro__right > :nth-child(3) {
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  transform: scaleX(-1);
+  width: 22rem;
+}
+
+.intro__blur {
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: #edd0ff;
+  filter: blur(72px);
+  top: 0;
+  z-index: -10;
+}
+.blur1 {
+  background-color: rgb(238, 191, 246);
+  top: 0rem;
+  left: 12rem;
+}
+.blur2 {
+  background-color: #c1f5ff;
+  top: 14rem;
+  left: -12rem;
+}
+
+@media only screen and (max-width: 380px) {
+  .intro__wrapper {
+    margin-bottom: 4rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .intro__wrapper {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+    height: 150vh !important;
+    position: relative;
+  }
+
+  .intro__left {
+    align-items: center;
+  }
+
+  .intro__name {
+    align-items: center;
+    text-align: center;
+  }
+
+  .intro__name :nth-of-type(3) {
+    text-align: center;
+  }
+
+  .intro__icons {
+    margin: auto;
+  }
+
+  .intro__right {
+    transform: scale(0.8);
+    display: flex;
+    justify-content: center;
+  }
+
+  .floater2,
+  .floater1 {
+    display: none;
+  }
+}
